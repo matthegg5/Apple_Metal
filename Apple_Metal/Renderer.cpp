@@ -21,19 +21,22 @@ Renderer::~Renderer()
 
 void Renderer::draw() const
 {
-   
-  MTL::CommandBuffer * pCmdBuf = _pCommandQueue->commandBuffer();
+    // configure the command buffer
+    MTL::CommandBuffer * pCmdBuf = _pCommandQueue->commandBuffer();
+    
+    // create a solid green colour texture
+    MTL::RenderPassDescriptor * pRpd = MTL::RenderPassDescriptor::alloc()->init();
+    pRpd->colorAttachments()->object(0)->setTexture(_pDrawable->texture());
+    pRpd->colorAttachments()->object(0)->setLoadAction(MTL::LoadActionClear);
+    pRpd->colorAttachments()->object(0)->setClearColor(MTL::ClearColor::Make(0.0, 1.0, 0.0, 1.0));
+    
+    MTL::RenderCommandEncoder * pEnc = pCmdBuf->renderCommandEncoder(pRpd);
+    pEnc->endEncoding();
+    pCmdBuf->presentDrawable(_pDrawable);
   
-  MTL::RenderPassDescriptor * pRpd = MTL::RenderPassDescriptor::alloc()->init();
-  pRpd->colorAttachments()->object(0)->setTexture(_pDrawable->texture());
-  pRpd->colorAttachments()->object(0)->setLoadAction(MTL::LoadActionClear);
-  pRpd->colorAttachments()->object(0)->setClearColor(MTL::ClearColor::Make(0.0, 1.0, 0.0, 1.0));
+    // send the command buffer to the GPU
+    pCmdBuf->commit();
   
-  MTL::RenderCommandEncoder * pEnc = pCmdBuf->renderCommandEncoder(pRpd);
-  pEnc->endEncoding();
-  pCmdBuf->presentDrawable(_pDrawable);
-  pCmdBuf->commit();
-  
-  pRpd->release();
+    pRpd->release();
     
 }
