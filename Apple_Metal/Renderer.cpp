@@ -35,6 +35,5 @@ void Renderer::draw() const
   pCmdBuf->commit();
   
   pRpd->release();
-    // test commit
     
 }
