@@ -2,8 +2,6 @@
 //  AppDelegate.m
 //  Apple_Metal
 //
-//  Created by saffron on 02/09/2024.
-//
 
 #import "AppDelegate.h"
 
