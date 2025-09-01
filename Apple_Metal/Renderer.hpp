@@ -1,5 +1,5 @@
-#include "Metal/Metal.hpp"
-#include "QuartzCore/CAMetalDrawable.hpp"
+#include <Metal/Metal.hpp>
+#include <QuartzCore/CAMetalDrawable.hpp>
 
 class Renderer {
     public:

@@ -3,40 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CAABB5472C86417100ECC18A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAABB5462C86417100ECC18A /* AppDelegate.m */; };
-		CAABB54A2C86417100ECC18A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CAABB5492C86417100ECC18A /* ViewController.mm */; };
-		CAABB54C2C86417200ECC18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAABB54B2C86417200ECC18A /* Assets.xcassets */; };
-		CAABB54F2C86417200ECC18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAABB54D2C86417200ECC18A /* Main.storyboard */; };
-		CAABB5512C86417200ECC18A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAABB5502C86417200ECC18A /* main.m */; };
+		CA7C3FF22E662CCF0076111D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7C3FF12E662CCF0076111D /* MetalKit.framework */; };
 		CAABB55A2C86446D00ECC18A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAABB5592C86446D00ECC18A /* Metal.framework */; };
 		CAABB55C2C86447700ECC18A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAABB55B2C86447700ECC18A /* QuartzCore.framework */; };
 		CAABB55E2C86448000ECC18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAABB55D2C86448000ECC18A /* Foundation.framework */; };
-		CAABB5612C8644B200ECC18A /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAABB55F2C8644B200ECC18A /* Renderer.cpp */; };
-		CAABB5632C8647BA00ECC18A /* RendererAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = CAABB5622C8647BA00ECC18A /* RendererAdapter.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA7C3FF12E662CCF0076111D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		CAABB5422C86417100ECC18A /* Apple_Metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apple_Metal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAABB5452C86417100ECC18A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CAABB5462C86417100ECC18A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CAABB5482C86417100ECC18A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CAABB5492C86417100ECC18A /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		CAABB54B2C86417200ECC18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CAABB54E2C86417200ECC18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CAABB5502C86417200ECC18A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CAABB5522C86417200ECC18A /* Apple_Metal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Apple_Metal.entitlements; sourceTree = "<group>"; };
 		CAABB5592C86446D00ECC18A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		CAABB55B2C86447700ECC18A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CAABB55D2C86448000ECC18A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CAABB55F2C8644B200ECC18A /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
-		CAABB5602C8644B200ECC18A /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
-		CAABB5622C8647BA00ECC18A /* RendererAdapter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererAdapter.mm; sourceTree = "<group>"; };
-		CAABB5642C8647E900ECC18A /* RendererAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererAdapter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA7C3F412E662BEC0076111D /* metal-cpp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "metal-cpp"; sourceTree = "<group>"; };
+		CA7C3F522E662C8B0076111D /* Apple_Metal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Apple_Metal; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CAABB53F2C86417100ECC18A /* Frameworks */ = {
@@ -46,6 +34,7 @@
 				CAABB55E2C86448000ECC18A /* Foundation.framework in Frameworks */,
 				CAABB55C2C86447700ECC18A /* QuartzCore.framework in Frameworks */,
 				CAABB55A2C86446D00ECC18A /* Metal.framework in Frameworks */,
+				CA7C3FF22E662CCF0076111D /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +44,8 @@
 		CAABB5392C86417100ECC18A = {
 			isa = PBXGroup;
 			children = (
-				CAABB5442C86417100ECC18A /* Apple_Metal */,
+				CA7C3F412E662BEC0076111D /* metal-cpp */,
+				CA7C3F522E662C8B0076111D /* Apple_Metal */,
 				CAABB5432C86417100ECC18A /* Products */,
 				CAABB5582C86446C00ECC18A /* Frameworks */,
 			);
@@ -69,28 +59,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CAABB5442C86417100ECC18A /* Apple_Metal */ = {
-			isa = PBXGroup;
-			children = (
-				CAABB5452C86417100ECC18A /* AppDelegate.h */,
-				CAABB5462C86417100ECC18A /* AppDelegate.m */,
-				CAABB5482C86417100ECC18A /* ViewController.h */,
-				CAABB5492C86417100ECC18A /* ViewController.mm */,
-				CAABB54B2C86417200ECC18A /* Assets.xcassets */,
-				CAABB54D2C86417200ECC18A /* Main.storyboard */,
-				CAABB5502C86417200ECC18A /* main.m */,
-				CAABB5522C86417200ECC18A /* Apple_Metal.entitlements */,
-				CAABB55F2C8644B200ECC18A /* Renderer.cpp */,
-				CAABB5602C8644B200ECC18A /* Renderer.hpp */,
-				CAABB5622C8647BA00ECC18A /* RendererAdapter.mm */,
-				CAABB5642C8647E900ECC18A /* RendererAdapter.h */,
-			);
-			path = Apple_Metal;
-			sourceTree = "<group>";
-		};
 		CAABB5582C86446C00ECC18A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA7C3FF12E662CCF0076111D /* MetalKit.framework */,
 				CAABB55D2C86448000ECC18A /* Foundation.framework */,
 				CAABB55B2C86447700ECC18A /* QuartzCore.framework */,
 				CAABB5592C86446D00ECC18A /* Metal.framework */,
@@ -112,6 +84,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA7C3F412E662BEC0076111D /* metal-cpp */,
+				CA7C3F522E662C8B0076111D /* Apple_Metal */,
 			);
 			name = Apple_Metal;
 			productName = Apple_Metal;
@@ -155,8 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAABB54C2C86417200ECC18A /* Assets.xcassets in Resources */,
-				CAABB54F2C86417200ECC18A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,26 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAABB5612C8644B200ECC18A /* Renderer.cpp in Sources */,
-				CAABB54A2C86417100ECC18A /* ViewController.mm in Sources */,
-				CAABB5512C86417200ECC18A /* main.m in Sources */,
-				CAABB5632C8647BA00ECC18A /* RendererAdapter.mm in Sources */,
-				CAABB5472C86417100ECC18A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CAABB54D2C86417200ECC18A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAABB54E2C86417200ECC18A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CAABB5532C86417200ECC18A /* Debug */ = {
@@ -315,7 +273,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "/opt/metal/metal-cpp";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/metal-cpp";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -341,7 +299,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "/opt/metal/metal-cpp";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/metal-cpp";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
