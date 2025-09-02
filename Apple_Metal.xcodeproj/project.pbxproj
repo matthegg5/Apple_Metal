@@ -23,7 +23,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CA7C3F412E662BEC0076111D /* metal-cpp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "metal-cpp"; sourceTree = "<group>"; };
-		CA7C3F522E662C8B0076111D /* Apple_Metal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Apple_Metal; sourceTree = "<group>"; };
+		CADA1C572E677626001FD241 /* Apple_Metal */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Apple_Metal; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,8 @@
 		CAABB5392C86417100ECC18A = {
 			isa = PBXGroup;
 			children = (
+				CADA1C572E677626001FD241 /* Apple_Metal */,
 				CA7C3F412E662BEC0076111D /* metal-cpp */,
-				CA7C3F522E662C8B0076111D /* Apple_Metal */,
 				CAABB5432C86417100ECC18A /* Products */,
 				CAABB5582C86446C00ECC18A /* Frameworks */,
 			);
@@ -87,7 +87,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				CA7C3F412E662BEC0076111D /* metal-cpp */,
-				CA7C3F522E662C8B0076111D /* Apple_Metal */,
+				CADA1C572E677626001FD241 /* Apple_Metal */,
 			);
 			name = Apple_Metal;
 			productName = Apple_Metal;
@@ -180,6 +180,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Application/Apple_Metal.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -241,6 +242,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Application/Apple_Metal.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -268,7 +270,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
-				CODE_SIGN_ENTITLEMENTS = Apple_Metal/Apple_Metal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Apple_Metal/Application/Apple_Metal.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Apple_Metal/Application/Apple_Metal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -294,7 +297,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
-				CODE_SIGN_ENTITLEMENTS = Apple_Metal/Apple_Metal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Apple_Metal/Application/Apple_Metal.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Apple_Metal/Application/Apple_Metal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
